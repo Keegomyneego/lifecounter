@@ -13,22 +13,71 @@
         android:orientation="vertical">
 
         <TextView
-            android:layout_gravity="center"
             android:layout_marginTop="@dimen/cardview_default_margin"
             android:layout_marginBottom="@dimen/cardview_default_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Player X" />
+            android:layout_weight="1"
+            android:text="Player X"
+            android:textSize="@dimen/player_name_font_size"
+            android:gravity="center" />
 
         <TextView
             android:id="@+id/health_counter"
-            android:layout_gravity="center"
             android:layout_marginTop="@dimen/cardview_default_margin"
             android:layout_marginBottom="@dimen/cardview_default_margin"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_weight="1"
             android:textSize="@dimen/player_life_font_size"
-            android:text="@string/starting_life_amount" />
+            android:text="@string/starting_life_amount"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <Button
+                android:id="@+id/minus_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/player_life_change_button_font_size"
+                android:text="-" />
+
+            <Button
+                android:id="@+id/plus_one"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/player_life_change_button_font_size"
+                android:text="+" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10">
+
+            <Button
+                android:id="@+id/minus_five"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/player_life_change_button_font_size"
+                android:text="-5" />
+
+            <Button
+                android:id="@+id/plus_five"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/player_life_change_button_font_size"
+                android:text="+5" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
