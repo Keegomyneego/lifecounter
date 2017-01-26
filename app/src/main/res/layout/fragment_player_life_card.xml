@@ -13,6 +13,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/player_name"
             android:layout_marginTop="@dimen/cardview_default_margin"
             android:layout_marginBottom="@dimen/cardview_default_margin"
             android:layout_width="match_parent"
@@ -23,14 +24,14 @@
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/health_counter"
+            android:id="@+id/player_health"
             android:layout_marginTop="@dimen/cardview_default_margin"
             android:layout_marginBottom="@dimen/cardview_default_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:textSize="@dimen/player_life_font_size"
-            android:text="@string/starting_life_amount"
+            android:text="0"
             android:gravity="center" />
 
         <LinearLayout

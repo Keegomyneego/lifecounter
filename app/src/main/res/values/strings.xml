@@ -1,4 +1,3 @@
 <resources>
     <string name="app_name">LifeCounter</string>
-    <string name="starting_life_amount">20</string>
 </resources>
